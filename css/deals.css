@@ -1,0 +1,68 @@
+#dealList{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin: 5vh 5vw;
+    padding: 2vw;
+    border: 0.2vw solid #dc0000;
+    gap: 2vw;
+}
+#dealCont{
+    display: flex;
+    padding: 1vw;
+    border: #dc0000 0.2vw solid;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#dealCont img{
+    width: 15vw;
+}
+#dealCont h2{
+    font-size: 1.6vw;
+    font-weight: 600;
+    margin: 0;
+}
+#dealCont h3, p{
+    font-size: 1.5vw;
+    margin: 0;
+    margin-bottom: 1vh;
+}
+#dealCont h4{
+    font-size: 1vw;
+    margin: 1vh 0;
+}
+#dealCont button{
+    font-size: 2vw;
+    padding: 0.5vh 5vw;
+    background-color: transparent;
+    border: #dc0000 0.2vw solid;
+    color: white;
+}
+#dealCont button:hover{
+    background-color: #dc0000;
+}
+@media screen and (max-width: 800px){
+    #dealList{
+        grid-template-columns: auto;
+    }
+    #dealCont img{
+        width: 70vw;
+    }
+    #dealCont h2{
+        font-size: 3vh;
+        margin-bottom: 2vh;
+    }
+    #dealCont h3{
+        font-size: 3vh;
+    }
+    #dealCont p{
+        font-size: 1.7vh;
+        padding: 0 3vw;
+    }
+    #dealCont button{
+        font-size: 4vh;
+        margin-bottom: 1vh;
+    }
+}

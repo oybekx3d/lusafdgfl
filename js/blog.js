@@ -1,0 +1,47 @@
+function loadCheatsheet(){
+    let i = 1;
+    fetch("data/blog.json")
+            .then(response => response.json())
+            .then(data =>
+                    Object.values(data).forEach(datum => {
+                        let parent = document.getElementById('blog');
+                        let contDiv = document.createElement('div');
+                        contDiv.className = "filter";
+                        contDiv.setAttribute('onclick', 'openBlogPost('+i+')');
+                        i=i+1;
+                        let innerDiv = document.createElement('div');
+                        let writtenDate = document.createElement('h4');
+                        writtenDate.textContent = datum.dateWritten;
+                        let header = document.createElement('h2');
+                        header.textContent = datum.headline;
+                        let desc = document.createElement('p');
+                        desc.textContent = datum.description;
+                        let authorInfo = document.createElement('h5');
+                        authorInfo.textContent = ('Written By '+datum.author);
+                        let img = document.createElement('img');
+                        img.src = datum.imageLink;
+                        innerDiv.appendChild(writtenDate);
+                        innerDiv.appendChild(header);
+                        innerDiv.appendChild(desc);
+                        innerDiv.appendChild(authorInfo);
+                        contDiv.appendChild(innerDiv);
+                        contDiv.appendChild(img);
+                        parent.appendChild(contDiv);
+}))}
+function openBlogPost(id) {
+    fetch("data/blog.json")
+            .then(response => response.json())
+            .then(data => {
+                let pCont = document.getElementById("blogPostParagraphs");
+                pCont.innerHTML = "";
+                let pCount = data[id].paraCount;
+                for (let i = 0; i < pCount+1; i++) {
+                    let p = document.createElement('p');
+                    let currentP = data[id]['para' + i];
+                    console.log(currentP)
+                    p.textContent = currentP;
+                    pCont.appendChild(p);
+                }
+                document.getElementById('blogPostPopUp').style.display = "flex";
+            })
+}

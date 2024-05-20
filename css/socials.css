@@ -1,0 +1,95 @@
+.socialsCont{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+.socialsCont h2{
+    font-size: 5vw;
+    text-align: center;
+}
+.socialsCont div{
+    display: flex;
+    flex-direction: row;
+    margin: 2vh 2vw;
+    border: #272727 0.2vw solid;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.makebgdark{
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: #272727;
+    padding: 3vh 0;
+}
+.socialsCont div div{
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    align-items: center;
+    padding: 1vw;
+    border: transparent 0.2vw solid;
+    background-color: transparent;
+}
+.socialsCont div div:hover{
+    scale: 1.1;
+    background-color: #2727272a;
+    border: #272727 0.2vw solid;
+}
+.socCont{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+.socCont h3{
+    font-size: 4vw;
+    color: #fff;
+}
+.socialsCont * img{
+    width: 10vw;
+}
+.socialsCont * h3{
+    text-align: center;
+}
+.socialCatCont{
+    display: flex;
+    margin: 3vh 2vw;
+    pad: 1vw;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border: #272727 0.2vw solid;
+    padding: 2vw;
+}
+.socialCatCont div{
+    border: transparent 0.2vw;
+    padding: 1vw;
+}
+.socialCatCont div:hover{
+    background-color: #2727272a;
+    scale: 1.1;
+    border: #272727 0.2vw solid;
+}
+.socialCatCont * img{
+    width: 35vw;
+}
+.socialCatCont * p{
+    width: 35vw;
+    font-size: 1vw;
+}
+
+@media screen and (max-width: 800px){
+    .socialsCont * img{
+        width: 30vw;
+    }
+    .socialsCont h2{
+        font-size: 6vh;
+    }
+    .socialCatCont * img{
+        width: 70vw;
+    }
+    .socialCatCont * p{
+        font-size: 2vh;
+        width: 70vw;
+        text-align: center;
+    }
+}

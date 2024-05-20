@@ -1,0 +1,152 @@
+#accPopUp{
+	position: fixed;
+	top: 0vh;
+	z-index: 100;
+    background-color: #272727;
+    display: none;
+    flex-direction: column;
+    padding: 1vw;
+    height: auto;
+    width: 80vw;
+    border: 0.2vw solid #dc0000;
+    color: white;
+    margin: 11vh 9vw;
+}
+#accPopUp button{
+	background-color: transparent;
+	border: #DC0000 0.2vw solid;
+	font-size: 1.5vw;
+	color: #fff;
+	height: max-content;
+	padding: 0.2vw 0.2vw;
+	margin-left: auto;
+	width: max-content;
+	display: inline;
+}
+#accPopUp button:hover{
+    background-color: #dc0000;
+}
+#accPopUp img{
+    width: 30vw;
+    margin: 2.5vw;
+}
+#accPopUp div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+}
+#accPopUp div div{
+    display: flex;
+    flex-direction: column;
+}
+#accPopUp h2{
+    font-size: 2.2vw;
+}
+#accPopUp p{
+    font-size: 1.2vw;
+}
+#accPopUp h3{
+    font-size: 2vw;
+}
+#accPopUp div div div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#accList{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 1vw;
+    border: 0.2vw solid #dc0000;
+    padding: 1vw;
+    margin: 5vh 5vw;
+}
+#accCont{
+    display: flex;
+    flex-direction: column;
+    padding: 1vw;
+    border: 0.2vw solid #dc0000;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    font-family: monospace;
+}
+#accCont img{
+    width: 18vw;
+}
+#accCont h2{
+    font-size: 1.6vw;
+    margin: 0;
+    margin-bottom: 3vh;
+}
+#accCont h3, p{
+    font-size: 1.5vw;
+    margin: 0;
+    margin-bottom: 1vh;
+}
+#accCont p{
+    font-size: 1vw;
+    margin: 1vh 0;
+}
+#accCont button{
+    font-size: 1.5vw;
+    padding: 0.5vh 1.5vw;
+    background-color: transparent;
+    border: #dc0000 0.2vw solid;
+    color: white;
+}
+#accCont button:hover{
+    background-color: #dc0000;
+}
+@media screen and (max-width: 800px){
+    #accList{
+        grid-template-columns: auto;
+    }
+    #accPopUp{
+        width: 90vw;
+        margin: 10.2vh 4vw;
+    }
+    #accCont img{
+        width: 70vw;
+    }
+    #accCont h2{
+        font-size: 3vh;
+        margin-bottom: 2vh;
+    }
+    #accCont p{
+        font-size: 1.7vh;
+        padding: 0 3vw;
+    }
+    #accCont h3{
+        font-size: 2.5vh;
+    }
+    #accCont button{
+        font-size: 3vh;
+        margin-bottom: 1vh;
+    }
+    #accPopUp div{
+        width: 85vw;
+        flex-direction: column;
+        gap: none;
+        padding: 1vh;
+    }
+    #accPopUp img{
+        width: 70vw;
+    }
+    #accPopUp h2{
+        font-size: 2vh;
+        padding-bottom: 1vh;
+        border-bottom: 0.2vw solid #dc0000;
+    }
+    #accPopUp p{
+        font-size: 1.5vh;
+    }
+    #accPrice{
+        font-size: 2vh !important;
+    }
+    #accPopUp button{
+        font-size: 3vh;
+    }
+}
