@@ -1,0 +1,51 @@
+{
+    "1" : {
+    "dealItemName":"Gaming PC NickName",
+    "dealInfo":"Blah Blah Blah, a 4K 420Hz Monitor, 0.69ms",
+    "dealImg":"imgs/pc_empty.webp",
+    "dealPrice":"22$",
+    "buyLink":"https://google.com"
+    },
+    "2" : {
+    "dealItemName":"Gaming PC NickName",
+    "dealInfo":"80% RGB Mechanical Keyboard, includes extra keycaps and free s3x doll",
+    "dealImg":"imgs/pc_empty.webp",
+    "dealPrice":"2$",
+    "buyLink":"https://google.com"
+    },
+    "3" : {
+    "dealItemName":"Gaming PC NickName",
+    "dealInfo":"A kid with broken rib, all organs work as intended",
+    "dealImg":"imgs/pc_empty.webp",
+    "dealPrice":"2$",
+    "buyLink":"https://google.com"
+    },
+    "4" : {
+    "dealItemName":"Gaming PC NickName",
+    "dealInfo":"John wicks pee, drink only in emergency",
+    "dealImg":"imgs/pc_empty.webp",
+    "dealPrice":"2$",
+    "buyLink":"https://google.com"
+    },
+    "5" : {
+    "dealItemName":"Gaming PC NickName",
+    "dealInfo":"i11 16th gen, 14 cores 12 threads",
+    "dealImg":"imgs/pc_empty.webp",
+    "dealPrice":"2$",
+    "buyLink":"https://google.com"
+    },
+    "6" : {
+    "dealItemName":"Gaming PC NickName",
+    "dealInfo":"Headphones with microphone, quick mute button as wekk as hangin d1ldo",
+    "dealImg":"imgs/pc_empty.webp",
+    "dealPrice":"2$",
+    "buyLink":"https://google.com"
+    },
+    "7" : {
+    "dealItemName":"Gaming PC NickName",
+    "dealInfo":"edible toilet paper, 69meters, 6pcs in box",
+    "dealImg":"imgs/pc_empty.webp",
+    "dealPrice":"2$",
+    "buyLink":"https://google.com"
+    }
+}

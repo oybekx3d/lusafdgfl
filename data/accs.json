@@ -1,0 +1,37 @@
+{
+    "1" : {
+    "accName":"Gaming PC NickName",
+    "accInfo":"Blah Blah Blah, a 4K 420Hz Monitor, 0.69ms",
+    "accImg":"imgs/pc_empty.webp",
+    "accPrice":"22$",
+    "accBuyLink":"https://google.com"
+    },
+    "2" : {
+    "accName":"Gaming PC NickName",
+    "accInfo":"Blah Blah Blah, a 4K 420Hz Monitor, 0.69ms",
+    "accImg":"imgs/pc_empty.webp",
+    "accPrice":"22$",
+    "accBuyLink":"https://google.com"
+    },
+    "3" : {
+    "accName":"Gaming PC NickName",
+    "accInfo":"Blah Blah Blah, a 4K 420Hz Monitor, 0.69ms",
+    "accImg":"imgs/pc_empty.webp",
+    "accPrice":"22$",
+    "accBuyLink":"https://google.com"
+    },
+    "4" : {
+    "accName":"Gaming PC NickName",
+    "accInfo":"Blah Blah Blah, a 4K 420Hz Monitor, 0.69ms",
+    "accImg":"imgs/pc_empty.webp",
+    "accPrice":"22$",
+    "accBuyLink":"https://google.com"
+    },
+    "5" : {
+    "accName":"Gaming PC NickName",
+    "accInfo":"Blah Blah Blah, a 4K 420Hz Monitor, 0.69ms",
+    "accImg":"imgs/pc_empty.webp",
+    "accPrice":"22$",
+    "accBuyLink":"https://google.com"
+    }
+}
