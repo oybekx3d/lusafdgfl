@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/global.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/global.js"></script>
+    <script src="js/acc.js"></script>
+    <link rel="stylesheet" href="css/acc.css">
+    <script type="module" src="https://pyscript.net/releases/2024.5.2/core.js"></script>
+    <script src="js/search.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body onload="loadAccs()">
+    
+  <div class="fixedView">
+      <div id="announcementBanner">
+        <a id="announcement" href="">Announcement!</a>
+      </div>
+      <nav id='menu'>
+        <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+        <ul>
+          <li><a href='index.html'>Home</a></li>
+          <li><a href='gaming.html'>Gaming</a></li>
+          <li><a href='productivity.html'>Productivity</a></li>
+          <li><a href='accs.html'>Accessories & peripherals</a></li>
+          <li><a href="deals.html">Current Deals</a></li>
+          <li><a href='benchmarks.html'>Benchmarks</a></li>
+          <li><a href='blog.html'>Blog</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="socials.html">Socials</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href='about.html'>About</a></li>
+          <li><a class='dropdown-arrow'>Country</a>
+            <ul class='sub-menus'>
+            <li><a href='http://'>1</a></li>
+            <li><a href='http://'>2</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+
+
+  <main>
+    <div id="mainMenuBanner">
+      <div>
+        <h1>Accessories & peripherals</h1>
+        <p>Find the best accessories for your setup and improve your gaming experience and workflow with amazing peripherals, accessories & more...</p>
+        <a href="#searchCont"><button>Check out</button></a>
+      </div>
+    </div>
+
+    
+    <div id="accPopUp">
+      <button onclick="closePopUp('accPopUp')">Close</button>
+        <div>
+          <img src="imgs/pc_empty.webp" alt="" id="accImg">
+          <div>
+            <h2 id="accHeader">Gaming Monitor, 4K, 240Hz, 1ms, OLED</h2>
+            <p id="accDesc">A Fucking Gaming Monitor with a FUCKING 4K RESOLUTION to not Watch P0rn on and 240Hz to not enjoy the hot moves, OLED screen not for realistic looks to j3rk off, 1ms response time to close it at the speed of light when your parents come in.</p>
+            <div>
+              <h3 id="accPrice">Price: 69$</h3>
+              <button id="accBuyBtn">Buy</button>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <div id="searchCont">
+      <input type="text" id="searchInput" placeholder="Search Peripherals & more...">
+    </div>
+
+
+    <div id="accList">
+      
+    </div>
+  </main>
+  <footer>
+      <div>
+        <div>
+          <img src="imgs/pc_empty.webp" alt="">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, quis deleniti repellat iusto est nisi dicta ipsa voluptate pariatur unde.</p>
+        </div>
+        <div>
+          <h3>Other Projects</h3>
+          <a href="">Project 1</a>
+          <a href="">Project 2</a>
+          <a href="">Project 3</a>
+          <a href="">Project 4</a>
+        </div>
+        <div>
+          <h3>Partners</h3>
+          <a href="">GamerTech Toronto</a>
+          <a href="">PainHub</a>
+          <a href="">BigTechYoutuber</a>
+        </div>
+        <div>
+          <h3>Other Links</h3>
+          <a href="socials.html">Our Socials</a>
+          <a href="faq.html">F.A.Q.</a>
+          <a href="about.html">About</a>
+          <a href="news.html">News</a>
+          <h3>Donations</h3>
+          <a href="">Donate!</a>
+        </div>
+      </div>
+      <h4>Website Made by Oybek Qodirberdiyev</h4>
+    </footer>
+</body>
+</html>

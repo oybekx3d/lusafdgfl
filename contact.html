@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <script src="js/global.js"></script>
+    <script type="module" src="https://pyscript.net/releases/2024.5.2/core.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+  </head>
+  <body>
+    <div class="fixedView">
+        <div id="announcementBanner">
+          <a id="announcement" href="">Announcement!</a>
+        </div>
+        <nav id='menu'>
+          <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+          <ul>
+            <li><a href='index.html'>Home</a></li>
+            <li><a href='gaming.html'>Gaming</a></li>
+            <li><a href='productivity.html'>Productivity</a></li>
+            <li><a href='accs.html'>Accessories & peripherals</a></li>
+            <li><a href="deals.html">Current Deals</a></li>
+            <li><a href='benchmarks.html'>Benchmarks</a></li>
+            <li><a href='blog.html'>Blog</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="socials.html">Socials</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href='about.html'>About</a></li>
+            <li><a class='dropdown-arrow'>Country</a>
+              <ul class='sub-menus'>
+              <li><a href='http://'>1</a></li>
+              <li><a href='http://'>2</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    
+    
+    <main>
+      <div id="mainMenuBanner">
+        <div>
+          <h1>Contact with us</h1>
+          <p>Do you want to be partners with us? Maybe you want to place your ad. Contact with us and lets us know about it!</p>
+          <a href="#contactMainCont"><button>Contact</button></a>
+        </div>
+      </div>
+
+
+      <div id="contactMainCont">
+        <h2>Contact us using...</h2>
+        <div>
+          <div>
+            <img src="imgs/mail_icon.svg" alt="">
+            <div>
+              <h3>Email: business.email@domain.com</h3>
+              <div>
+                <button onclick="navigator.clipboard.writeText('business.email@domain.com'); alert('Copied to clipboard')">Copy</button>
+                <a href=""><button>Email</button></a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <img src="imgs/discord_logo.svg" alt="">
+            <div>
+              <h3>Discord: @businessName</h3>
+              <div>
+                <button onclick="navigator.clipboard.writeText('@businessName'); alert('Copied to clipboard')">Copy</button>
+                <a href=""><button>Message</button></a>
+              </div>
+            </div>
+          </div>
+          <div>
+        </div>
+      </div>
+
+
+
+
+
+
+    </main>
+
+
+
+
+
+
+
+
+
+    <footer>
+      <div>
+        <div>
+          <img src="imgs/pc_empty.webp" alt="">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, quis deleniti repellat iusto est nisi dicta ipsa voluptate pariatur unde.</p>
+        </div>
+        <div>
+          <h3>Other Projects</h3>
+          <a href="">Project 1</a>
+          <a href="">Project 2</a>
+          <a href="">Project 3</a>
+          <a href="">Project 4</a>
+        </div>
+        <div>
+          <h3>Partners</h3>
+          <a href="">GamerTech Toronto</a>
+          <a href="">PainHub</a>
+          <a href="">BigTechYoutuber</a>
+        </div>
+        <div>
+          <h3>Other Links</h3>
+          <a href="socials.html">Our Socials</a>
+          <a href="faq.html">F.A.Q.</a>
+          <a href="about.html">About</a>
+          <a href="news.html">News</a>
+          <h3>Donations</h3>
+          <a href="">Donate!</a>
+        </div>
+      </div>
+      <h4>Website Made by Oybek Qodirberdiyev</h4>
+    </footer>
+    </body>
+</html>
