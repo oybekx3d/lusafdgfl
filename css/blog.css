@@ -80,8 +80,7 @@
     font-size: 1vw;
 }
 #blogPostPopUp img{
-    width: 80vw;
-    aspect-ratio: 3/1;
+    width: 20vw;
 }
 #blogPostPopUp button{
     background-color: #272727;

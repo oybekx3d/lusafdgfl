@@ -43,5 +43,10 @@ function openBlogPost(id) {
                     pCont.appendChild(p);
                 }
                 document.getElementById('blogPostPopUp').style.display = "flex";
+                document.getElementById('blogPostAuthor').textContent = ("Written by: "+data[id].author);
+                document.getElementById('blodPostDate').textContent = ("Written date: "+data[id].dateWritten);
+                document.getElementById('blogPostHeader').textContent = data[id].headline;
+                document.getElementById('blogPostDesc').textContent = data[id].description;
+                document.getElementById('blogPostMainImg').src = data[id].imageLink;
             })
 }

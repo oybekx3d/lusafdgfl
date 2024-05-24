@@ -1,9 +1,3 @@
-#mainMenuBanner{
-    background-image: url("../imgs/partnership.svg") !important; 
-}
-#mainMenuBanner div{
-    background-color: #2727278c;
-}
 #contactMainCont{
     display: flex;
     flex-direction: column;

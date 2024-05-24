@@ -1,8 +1,8 @@
 {
     "1" : {
-    "dealItemName":"Gaming PC NickName",
-    "dealInfo":"Blah Blah Blah, a 4K 420Hz Monitor, 0.69ms",
-    "dealImg":"imgs/pc_empty.webp",
+    "dealItemName":"Monitor 32' 4K OLED 144hz",
+    "dealInfo":"4KOLED 32 inch Monitor with 144Hz refresh rate on sale for 399$",
+    "dealImg":"imgs/deals/monitor4koled.jpg",
     "dealPrice":"22$",
     "buyLink":"https://google.com"
     },

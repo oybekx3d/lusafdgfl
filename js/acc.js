@@ -17,7 +17,7 @@ function loadAccs() {
               let price = document.createElement('h3');
               price.textContent = datum.accPrice;
               let button = document.createElement('button');
-              button.setAttribute('onclick', 'openAccPopUp('+i+')');
+              button.setAttribute('onclick', 'window.open("'+datum.accBuyLink+'")');
               i = i+1;
               button.textContent = "More Information";
               contDiv.appendChild(img);
@@ -29,15 +29,3 @@ function loadAccs() {
           })
         );
     }
-    function openAccPopUp(id) {
-        fetch(jsonName)
-            .then(response => response.json())
-            .then(data => {
-                document.getElementById("accImg").src = data[id].accImg;
-                document.getElementById("accHeader").textContent = data[id].accname;
-                document.getElementById("accDesc").textContent = data[id].accInfo;
-                document.getElementById("accPrice").textContent = data[id].accPrice;
-                document.getElementById("accBuyBtn").setAttribute('onclick', 'window.open('+id+')');
-            })
-        document.getElementById("accPopUp").style.display = "flex";
-        }

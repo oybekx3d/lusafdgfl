@@ -1,59 +1,3 @@
-#accPopUp{
-	position: fixed;
-	top: 0vh;
-	z-index: 100;
-    background-color: #272727;
-    display: none;
-    flex-direction: column;
-    padding: 1vw;
-    height: auto;
-    width: 80vw;
-    border: 0.2vw solid #dc0000;
-    color: white;
-    margin: 11vh 9vw;
-}
-#accPopUp button{
-	background-color: transparent;
-	border: #DC0000 0.2vw solid;
-	font-size: 1.5vw;
-	color: #fff;
-	height: max-content;
-	padding: 0.2vw 0.2vw;
-	margin-left: auto;
-	width: max-content;
-	display: inline;
-}
-#accPopUp button:hover{
-    background-color: #dc0000;
-}
-#accPopUp img{
-    width: 30vw;
-    margin: 2.5vw;
-}
-#accPopUp div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 3vw;
-}
-#accPopUp div div{
-    display: flex;
-    flex-direction: column;
-}
-#accPopUp h2{
-    font-size: 2.2vw;
-}
-#accPopUp p{
-    font-size: 1.2vw;
-}
-#accPopUp h3{
-    font-size: 2vw;
-}
-#accPopUp div div div{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
 #accList{
     display: grid;
     grid-template-columns: auto auto auto auto;
@@ -104,10 +48,6 @@
     #accList{
         grid-template-columns: auto;
     }
-    #accPopUp{
-        width: 90vw;
-        margin: 10.2vh 4vw;
-    }
     #accCont img{
         width: 70vw;
     }
@@ -126,27 +66,7 @@
         font-size: 3vh;
         margin-bottom: 1vh;
     }
-    #accPopUp div{
-        width: 85vw;
-        flex-direction: column;
-        gap: none;
-        padding: 1vh;
-    }
-    #accPopUp img{
-        width: 70vw;
-    }
-    #accPopUp h2{
-        font-size: 2vh;
-        padding-bottom: 1vh;
-        border-bottom: 0.2vw solid #dc0000;
-    }
-    #accPopUp p{
-        font-size: 1.5vh;
-    }
     #accPrice{
         font-size: 2vh !important;
-    }
-    #accPopUp button{
-        font-size: 3vh;
     }
 }

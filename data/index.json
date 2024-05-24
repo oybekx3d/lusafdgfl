@@ -1,74 +1,74 @@
 {
     "1" : {
-    "pcName":"Gaming PC NickName",
+    "pcName":"Maximum Gaming PC",
     "pcDescription":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente optio reprehenderit veniam aliquam ratione, impedit numquam, modi deleniti, aspernatur iusto ea. Tenetur, deleniti aperiam.",
     "pcImg":"imgs/pc_empty.webp",
-    "pcPrice":"1099$",
+    "pcPrice":"2599$",
 
-    "cpu":"7800X3D",
+    "cpu":"Ryzen 7 7800X3D",
     "cpuBuyLink":"https://google.com/cpu",
 
-    "cooler":"Cooler Name",
+    "cooler":"360MM AIO Liquid Cooler with LCD Screen",
     "coolerBuyLink":"https://google.com/cooler",
 
-    "mobo":"B650 Aorus Elite XXX",
+    "mobo":"X670 Aorus Elite X AX",
     "moboBuyLink":"https://google.com/mobo",
 
-    "ram":"32GB DDR5[2x16] 6000MHz",
+    "ram":"64GB DDR5[2x32] 6400MHz",
     "ramBuyLink":"https://google.com/ram",
 
-    "storage":"1TB NVME SSD Gen 4.0",
+    "storage":"2TB NVME SSD Gen 4.0",
     "storageBuyLink":"https://google.com/storage",
 
-    "gpu":"7900XTX Merc",
+    "gpu":"RTX 4090 Matrix [Liquid cooled]",
     "gpuBuyLink":"https://google.com/gpu",
 
     "case":"Lian Li O11 Dynamic",
     "caseBuyLink":"https://google.com/case",
 
-    "psu":"850W 80+ Dick rating",
+    "psu":"1300W PSU, 80+ Titanum, Tier S",
     "psuBuyLink":"https://google.com/psu"
 },
     "2" : {
-    "pcName":"Gaming PC NickName",
+    "pcName":"Workstation & Gaming PC",
     "pcDescription":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente optio reprehenderit veniam aliquam ratione, impedit numquam, modi deleniti, aspernatur iusto ea. Tenetur, deleniti aperiam.",
     "pcImg":"imgs/pc_empty.webp",
     "pcPrice":"2099$",
     
-    "cpu":"7800X3D",
+    "cpu":"Ryzen 9 7950X3D",
     "cpuBuyLink":"https://google.com/cpu",
 
-    "cooler":"Cooler Name",
+    "cooler":"AIO Liquid cooler all Black",
     "coolerBuyLink":"https://google.com/cooler",
 
-    "mobo":"B650 Aorus Elite XXXX",
+    "mobo":"X670E Creator Pro Series",
     "moboBuyLink":"https://google.com/mobo",
 
-    "ram":"32GB DDR5[2x16] 6000MHz",
+    "ram":"96GB RAM [2x48GB] 6000MHz",
     "ramBuyLink":"https://google.com/ram",
 
-    "storage":"1TB NVME SSD Gen 4.0",
+    "storage":"4TB NVME SSD Gen 4.0 + 8TB SATA SSD 6 GBPS",
     "storageBuyLink":"https://google.com/storage",
 
-    "gpu":"7900XTX Merc",
+    "gpu":"RTX 4090",
     "gpuBuyLink":"https://google.com/gpu",
 
     "case":"Lian Li O11 Dynamic",
     "caseBuyLink":"https://google.com/case",
 
-    "psu":"850W 80+ Dick rating",
+    "psu":"1200W PSU, 80+ Titanum, Tier S",
     "psuBuyLink":"https://google.com/psu"
     },
     "3" : {
-        "pcName":"Gaming PC NickName",
+        "pcName":"Budget gaming PC",
         "pcDescription":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente optio reprehenderit veniam aliquam ratione, impedit numquam, modi deleniti, aspernatur iusto ea. Tenetur, deleniti aperiam.",
         "pcImg":"imgs/pc_empty.webp",
-        "pcPrice":"3099$",
+        "pcPrice":"999$",
         
-        "cpu":"7800X3D",
+        "cpu":"Ryzen 5 7600",
         "cpuBuyLink":"https://google.com/cpu",
     
-        "cooler":"Cooler Name",
+        "cooler":"Stock cooler",
         "coolerBuyLink":"https://google.com/cooler",
     
         "mobo":"B650 Aorus Elite XXX",
@@ -80,13 +80,13 @@
         "storage":"1TB NVME SSD Gen 4.0",
         "storageBuyLink":"https://google.com/storage",
     
-        "gpu":"7900XTX Merc",
+        "gpu":"Radeon RX 7700 XT",
         "gpuBuyLink":"https://google.com/gpu",
     
-        "case":"Lian Li O11 Dynamic",
+        "case":"Cheap Case with 4 pre installed fans",
         "caseBuyLink":"https://google.com/case",
     
-        "psu":"850W 80+ Dick rating",
+        "psu":"850W,  80+ Gold, Tier B",
         "psuBuyLink":"https://google.com/psu"
     }
 }
