@@ -1,0 +1,197 @@
+.pcContainer{
+	display: flex;
+	flex-direction: column;
+	color: #fff;
+	padding: 1vw;
+	border: #DC0000 0.2vw solid;
+	font-family: monospace;
+	justify-content: center;
+	align-self: center;
+}
+.pcContainer img{
+	width: 25vw;
+	height: auto;
+	margin: 0 auto;
+}
+.pcContainer h2{
+	font-size: 1vw;
+	margin: 0;
+}
+.pcContainer h3{
+	font-size: 1.3vw;
+	margin: 1vh 0;
+}
+.pcContainer p{
+	font-size: 1vw;
+	margin: 1vh 0;
+}
+.pcContainer ol{
+	text-align: start;
+	list-style-type: disc;
+}
+.pcContainer li{
+	font-size: 0.8vw;
+}
+.pcContainer a{
+	width: 100%;
+}
+.pcContainer button{
+	width: 100%;
+	background-color: transparent;
+	border: #dc0000 0.2vw solid;
+	font-size: 1vw;
+	color: #fff;
+	padding: 0.4vw 0.2vw;
+	font-size: 1.5vw;
+}
+.pcContainer button:hover{
+	background-color: #DC0000;
+	cursor: pointer;
+}
+#PCList{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-bottom: 3vh;
+    margin: 3vw;
+    padding: 1vw;
+    gap: 4vw;
+}
+#PCPopUp{
+	top: 0vh;
+	z-index: 100;
+	background-color: #2f2f2f;
+	display: flex;
+	flex-direction: column;
+	width: 80vw;
+	margin: 13vh 10vw;
+	border: #DC0000 0.2vw solid;
+	padding: 1vw;
+	color: white;
+	animation: fadeIn 0.3s;
+}
+#PCPopUp .spacer{
+	margin: 2vh 0 !important;
+}
+#PCPopUp div{
+	display: flex;
+}
+#PCPopUp div:nth-child(2){
+	display: flex;
+	justify-content: center;
+}
+#PCPopUp div div div{
+	gap: none;
+	display: flex;
+	flex-direction: row;
+}
+#popUpImg{
+	width: 33vw;
+	padding-right: 10vw;
+	margin: 0 auto;
+}
+#PCPopUp .spacer{
+	margin: 0;
+}
+#popUpDesc{
+	font-size: 1.3vw;
+	display: inline;
+}
+#popUpName{
+	font-size: 2.5vw;
+	margin: 0;
+}
+#PCPopUp h3{
+	margin: 0;
+	font-size: 2vw;
+	display: inline;
+	width: max-content;
+}
+#pcSpecCont{
+	list-style-type: disc;
+	font-size: 1.3vw;
+}
+#PCPopUp button{
+	background-color: transparent;
+	border: #DC0000 0.2vw solid;
+	font-size: 1.5vw;
+	color: #fff;
+	height: max-content;
+	padding: 0.2vw 0.2vw;
+	margin-left: auto;
+	width: max-content;
+	display: inline;
+}
+#PCPopUp button:hover{
+	background-color: #DC0000;
+	cursor: pointer;
+}
+#PCPopUp div div{
+	gap: none;
+	width: 35vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: start !important;
+	align-items: start !important;
+}
+@media screen and (max-width: 800px){
+    
+	#PCList{
+		grid-template-columns: auto;
+	}
+	.pcContainer{
+		text-align: center;
+	}
+	.pcContainer img{
+		width: 70vw;
+		margin: 0 auto;
+	}
+	.pcContainer h2{
+		font-size: 3vh;
+	}
+	.pcContainer h3{
+		font-size: 3vh;
+	}
+	.pcContainer p{
+		font-size: 2vh;
+	}
+	.pcContainer li{
+		font-size: 2vh;
+	}
+	.pcContainer button{
+		font-size: 3vh;
+	}
+	#PCPopUp{
+		width: 92vw;
+		margin: 10.2vh 3vw;
+		height: 88vh;
+	}
+	#PCPopUp div{
+		flex-direction: column;
+		justify-content: center;
+		align-self: center;
+	}
+	#popUpImg{
+		width: 70vw;
+		margin: none;
+		padding: none;
+	}
+	#popUpName{
+		font-size: 4vh;
+	}
+	#popUpDesc{
+		font-size: 2vh;
+	}
+	#PCPopUp h3{
+		font-size: 3vh;
+	}
+	#pcSpecCont{
+		font-size: 2vh;
+	}
+	#PCPopUp div div{
+		width: 70vw;
+	}
+	#PCPopUp button{
+		font-size: 3vh;
+		padding: .5vh;
+	}
+}

@@ -152,6 +152,7 @@ body{
 	text-decoration: none;
 	color: #FFFFFF;
 	font-size: 0.9vw;
+	cursor: pointer;
 }
 #menu a.dropdown-arrow:after {
 	content: "\25BE";
@@ -186,11 +187,12 @@ body{
 #menu ul.sub-menus{
 	height: auto;
 	overflow: hidden;
-	width: 7.05vw;
+	width: max-content;
 	background: #272727;
 	position: absolute;
 	z-index: 99;
 	display: none;
+	cursor: pointer;
 }
 #menu ul.sub-menus li {
 	display: block;
@@ -208,55 +210,6 @@ body{
 	background: #272727;
 	color: #DC0000;
 }
-.pcContainer{
-	display: flex;
-	flex-direction: column;
-	color: #fff;
-	padding: 1vw;
-	border: #DC0000 0.2vw solid;
-	font-family: monospace;
-	justify-content: center;
-	align-self: center;
-}
-.pcContainer img{
-	width: 25vw;
-	height: auto;
-}
-.pcContainer h2{
-	font-size: 1vw;
-	margin: 0;
-}
-.pcContainer h3{
-	font-size: 1.3vw;
-	margin: 1vh 0;
-}
-.pcContainer p{
-	font-size: 1vw;
-	margin: 1vh 0;
-}
-.pcContainer ol{
-	text-align: start;
-	list-style-type: disc;
-}
-.pcContainer li{
-	font-size: 0.8vw;
-}
-.pcContainer a{
-	width: 100%;
-}
-.pcContainer button{
-	width: 100%;
-	background-color: transparent;
-	border: #dc0000 0.2vw solid;
-	font-size: 1vw;
-	color: #fff;
-	padding: 0.4vw 0.2vw;
-	font-size: 1.5vw;
-}
-.pcContainer button:hover{
-	background-color: #DC0000;
-	cursor: pointer;
-}
 .spacer{
 	width: 80vw;
 	border: none;
@@ -266,14 +219,6 @@ body{
 	height: 0 !important;
 	padding: 0 !important;
 }
-#PCList{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    margin-bottom: 3vh;
-    margin: 3vw;
-    padding: 1vw;
-    gap: 4vw;
-}
 @keyframes fadeIn {
 	0%{
 		opacity: 0;
@@ -281,87 +226,6 @@ body{
 	100%{
 		opacity: 1;
 	}
-}
-#PCPopUp{
-	position: fixed;
-	top: 0vh;
-	z-index: 100;
-	background-color: #272727;
-	display: none;
-	flex-direction: column;
-	width: 80vw;
-	height: 80%;
-	margin: 13vh 10vw;
-	border: #DC0000 0.2vw solid;
-	padding: 1vw;
-	color: white;
-	animation: fadeIn 0.3s;
-	overflow: scroll;
-}
-
-#PCPopUp .spacer{
-	margin: 2vh 0 !important;
-}
-#PCPopUp div{
-	display: flex;
-}
-#PCPopUp div:nth-child(2){
-	display: flex;
-	justify-content: center;
-}
-#PCPopUp div div div{
-	gap: none;
-	display: flex;
-	flex-direction: row;
-}
-#popUpImg{
-	width: 33vw;
-	padding-right: 10vw;
-	margin: 0 auto;
-}
-#PCPopUp .spacer{
-	margin: 0;
-}
-#popUpDesc{
-	font-size: 1.3vw;
-	display: inline;
-}
-#popUpName{
-	font-size: 2.5vw;
-	margin: 0;
-}
-#PCPopUp h3{
-	margin: 0;
-	font-size: 2vw;
-	display: inline;
-	width: max-content;
-}
-#pcSpecCont{
-	list-style-type: disc;
-	font-size: 1.3vw;
-}
-#PCPopUp button{
-	background-color: transparent;
-	border: #DC0000 0.2vw solid;
-	font-size: 1.5vw;
-	color: #fff;
-	height: max-content;
-	padding: 0.2vw 0.2vw;
-	margin-left: auto;
-	width: max-content;
-	display: inline;
-}
-#PCPopUp button:hover{
-	background-color: #DC0000;
-	cursor: pointer;
-}
-#PCPopUp div div{
-	gap: none;
-	width: 35vw;
-	display: flex;
-	flex-direction: column;
-	justify-content: start !important;
-	align-items: start !important;
 }
 footer{
 	display: flex;
@@ -464,31 +328,6 @@ input{
     #mainMenuBanner button{
         font-size: 2.5vh;
     }
-	#PCList{
-		grid-template-columns: auto;
-	}
-	.pcContainer{
-		text-align: center;
-	}
-	.pcContainer img{
-		width: 70vw;
-		margin: 0 auto;
-	}
-	.pcContainer h2{
-		font-size: 3vh;
-	}
-	.pcContainer h3{
-		font-size: 3vh;
-	}
-	.pcContainer p{
-		font-size: 2vh;
-	}
-	.pcContainer li{
-		font-size: 2vh;
-	}
-	.pcContainer button{
-		font-size: 3vh;
-	}
 	footer{
 		flex-direction: column;
 		margin: 1vh 5vw;
@@ -520,40 +359,6 @@ input{
 	}
 	footer h4{
 		text-align: center;
-	}
-	#PCPopUp{
-		width: 92vw;
-		margin: 10.2vh 3vw;
-		height: 88vh;
-	}
-	#PCPopUp div{
-		flex-direction: column;
-		justify-content: center;
-		align-self: center;
-	}
-	#popUpImg{
-		width: 70vw;
-		margin: none;
-		padding: none;
-	}
-	#popUpName{
-		font-size: 4vh;
-	}
-	#popUpDesc{
-		font-size: 2vh;
-	}
-	#PCPopUp h3{
-		font-size: 3vh;
-	}
-	#pcSpecCont{
-		font-size: 2vh;
-	}
-	#PCPopUp div div{
-		width: 70vw;
-	}
-	#PCPopUp button{
-		font-size: 3vh;
-		padding: .5vh;
 	}
 	input{
 		font-size: 2vh;

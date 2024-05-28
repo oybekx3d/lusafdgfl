@@ -1,10 +1,10 @@
-#blog div div{
+#blog a div{
     display: flex;
     flex-direction: column;
     border: none;
     margin: 0;
 }
-#blog div div:hover{
+#blog a div:hover{
     background-color: transparent;
 }
 #blog{
@@ -12,16 +12,16 @@
     grid-template-columns: auto auto;
     margin: 0 10vw;
 }
-#blog div{
+#blog a{
     color: #fff;
     padding: 1vw;
     display: flex;
     border: #dc0000 0.2vw solid;
     margin: 1vw;
     cursor: pointer;
-    gap: 2vh;
-}   
-#blog div:hover{
+    padding: 2vw;
+}
+#blog a:hover{
     background-color: #ff000009;
 }
 #blog img{
@@ -31,15 +31,15 @@
 #blog h2{
     font-weight: 1000;
     font-size: 1.5vw;
-    margin: 0;
+    margin: 1vh 0;
 }
 #blog p{
     font-size: 0.75vw;
-    margin: 0;
+    margin: 1vh 0;
 }
 #blog h4{
     font-size: 0.75vw;
-    margin: 0;
+    margin: 1vh 0;
 }
 #blog h5{
     font-size: 0.75vw;
@@ -48,17 +48,11 @@
 }
 #blogPostPopUp{
     scroll-behavior: smooth;
-    display: none;
     flex-direction: column;
     align-items: center;
     justify-content: start;
-    position: fixed;
-    top: 0;
     width: 80vw;
-    height: 85%;
-    overflow: scroll;
-    background-color: #272727;
-    z-index: 99;
+    background-color: #2f2f2f;
     color: #fff;
     padding: 5vw;
     margin: 0 5vw;
