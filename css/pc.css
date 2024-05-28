@@ -56,8 +56,7 @@
     padding: 1vw;
     gap: 4vw;
 }
-#PCPopUp{
-	top: 0vh;
+#pcInfoCont{
 	z-index: 100;
 	background-color: #2f2f2f;
 	display: flex;
@@ -69,17 +68,17 @@
 	color: white;
 	animation: fadeIn 0.3s;
 }
-#PCPopUp .spacer{
+#pcInfoCont .spacer{
 	margin: 2vh 0 !important;
 }
-#PCPopUp div{
+#pcInfoCont div{
 	display: flex;
 }
-#PCPopUp div:nth-child(2){
+#pcInfoCont div:nth-child(2){
 	display: flex;
 	justify-content: center;
 }
-#PCPopUp div div div{
+#pcInfoCont div div div{
 	gap: none;
 	display: flex;
 	flex-direction: row;
@@ -89,7 +88,7 @@
 	padding-right: 10vw;
 	margin: 0 auto;
 }
-#PCPopUp .spacer{
+#pcInfoCont .spacer{
 	margin: 0;
 }
 #popUpDesc{
@@ -100,7 +99,7 @@
 	font-size: 2.5vw;
 	margin: 0;
 }
-#PCPopUp h3{
+#pcInfoCont h3{
 	margin: 0;
 	font-size: 2vw;
 	display: inline;
@@ -110,7 +109,7 @@
 	list-style-type: disc;
 	font-size: 1.3vw;
 }
-#PCPopUp button{
+#pcInfoCont button{
 	background-color: transparent;
 	border: #DC0000 0.2vw solid;
 	font-size: 1.5vw;
@@ -121,11 +120,11 @@
 	width: max-content;
 	display: inline;
 }
-#PCPopUp button:hover{
+#pcInfoCont button:hover{
 	background-color: #DC0000;
 	cursor: pointer;
 }
-#PCPopUp div div{
+#pcInfoCont div div{
 	gap: none;
 	width: 35vw;
 	display: flex;
@@ -133,8 +132,30 @@
 	justify-content: start !important;
 	align-items: start !important;
 }
+#buyLinks{
+	display: grid !important;
+	grid-template-columns: auto auto auto;
+	margin: 5vh 10vw;
+}
+#buyLinks h4{
+	border: #dc0000 0.2vw solid;
+	padding: 1vw;
+	font-size: 1vw;
+	margin: 0;
+	text-wrap: wrap;
+}
+#buyLinks a{
+	font-size: 2vw;
+	padding: 0.5vw;
+	border: #dc0000 0.2vw solid;
+}
 @media screen and (max-width: 800px){
-    
+    #buyLinks h4{
+		font-size: 1.5vh;
+	}
+	#buyLinks a{
+		font-size: 3vh;
+	}
 	#PCList{
 		grid-template-columns: auto;
 	}
@@ -160,12 +181,11 @@
 	.pcContainer button{
 		font-size: 3vh;
 	}
-	#PCPopUp{
+	#pcInfoCont{
 		width: 92vw;
 		margin: 10.2vh 3vw;
-		height: 88vh;
 	}
-	#PCPopUp div{
+	#pcInfoCont div{
 		flex-direction: column;
 		justify-content: center;
 		align-self: center;
@@ -181,16 +201,16 @@
 	#popUpDesc{
 		font-size: 2vh;
 	}
-	#PCPopUp h3{
+	#pcInfoCont h3{
 		font-size: 3vh;
 	}
 	#pcSpecCont{
 		font-size: 2vh;
 	}
-	#PCPopUp div div{
+	#pcInfoCont div div{
 		width: 70vw;
 	}
-	#PCPopUp button{
+	#pcInfoCont button{
 		font-size: 3vh;
 		padding: .5vh;
 	}

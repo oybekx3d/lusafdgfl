@@ -56,9 +56,7 @@
 
 
       <main>
-
-        
-        <div id="PCPopUp" onload="loadPCInfo()">
+        <div id="pcInfoCont" onload="loadPCInfo()">
             <div>
               <div>
                 <img src="" alt="" id="popUpImg">
@@ -69,14 +67,14 @@
                 <div class="spacer"></div>
                 <h3>Specifications</h3>
                 <ol id="pcSpecCont">
-                  <li id="cpu"></li>
-                  <li id="cooler"></li>
-                  <li id="mobo"></li>
-                  <li id="ram"></li>
-                  <li id="storage"></li>
-                  <li id="gpu"></li>
-                  <li id="case"></li>
-                  <li id="psu"></li>
+                  <li class="cpu"></li>
+                  <li class="cooler"></li>
+                  <li class="mobo"></li>
+                  <li class="ram"></li>
+                  <li class="storage"></li>
+                  <li class="gpu"></li>
+                  <li class="case"></li>
+                  <li class="psu"></li>
                 </ol>
                 <div class="spacer"></div>
                 <div>
@@ -85,7 +83,35 @@
                 </div>
               </div>
             </div>
+
+            <div id="buyLinks">
+                <h4>CPU</h4>
+                <h4 class="cpu"></h4>
+                <a href="">Buy</a>
+                <h4>CPU Cooler</h4>
+                <h4 class="cooler"></h4>
+                <a href="">Buy</a>
+                <h4>Motherboard</h4>
+                <h4 class="mobo"></h4>
+                <a href="">Buy</a>
+                <h4>RAM</h4>
+                <h4 class="ram"></h4>
+                <a href="">Buy</a>
+                <h4>SSD</h4>
+                <h4 class="storage"></h4>
+                <a href="">Buy</a>
+                <h4>GPU</h4>
+                <h4 class="gpu"></h4>
+                <a href="">Buy</a>
+                <h4>Case</h4>
+                <h4 class="case"></h4>
+                <a href="">Buy</a>
+                <h4>PSU</h4>
+                <h4 class="psu"></h4>
+                <a href="">Buy</a>
+            </div>
           </div>
+
 
 
       </main>
@@ -129,8 +155,6 @@
   var urlParams = new URLSearchParams(url);
   var category = urlParams.get('category');
   var id = urlParams.get('id');
-  console.log(category, id);
-
   loadPCInfo();
 </script>
 </html>

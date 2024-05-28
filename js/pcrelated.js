@@ -47,14 +47,14 @@ function loadPCInfo() {
   fetch(("data/"+category+".json"))
       .then(response => response.json())
       .then(data => {
-        document.getElementById("cpu").textContent = data[id].cpu;
-        document.getElementById("gpu").textContent = data[id].gpu;
-        document.getElementById("ram").textContent = data[id].ram;
-        document.getElementById("storage").textContent = data[id].storage;
-        document.getElementById("mobo").textContent = data[id].mobo;
-        document.getElementById("cooler").textContent = data[id].cooler;
-        document.getElementById("case").textContent = data[id].case;
-        document.getElementById("psu").textContent = data[id].psu;
+        $(".cpu").html(data[id].cpu);
+        $(".ram").html(data[id].ram);
+        $(".gpu").html(data[id].gpu);
+        $(".storage").html(data[id].storage);
+        $(".mobo").html(data[id].mobo);
+        $(".cooler").html(data[id].cooler);
+        $(".case").html(data[id].case);
+        $(".psu").html(data[id].psu);
         document.getElementById("price").textContent = data[id].pcPrice;
         document.getElementById("popUpImg").src = data[id].pcImg;
         document.getElementById("popUpDesc").textContent = data[id].pcDescription;
@@ -64,3 +64,6 @@ function loadPCInfo() {
         }
     )
   }
+function buyPC() {
+  
+}
