@@ -17,7 +17,7 @@ function loadDeals(){
                         let button = document.createElement('button');
                         button.setAttribute('onclick', 'buyDeal('+i+')');
                         i = i+1;
-                        button.textContent = "More Information";
+                        button.textContent = "Buy";
                         let price = document.createElement('h3');
                         price.textContent = datum.dealPrice;
                         contDiv.appendChild(img);

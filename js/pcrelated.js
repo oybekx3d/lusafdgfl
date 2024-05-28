@@ -55,15 +55,21 @@ function loadPCInfo() {
         $(".cooler").html(data[id].cooler);
         $(".case").html(data[id].case);
         $(".psu").html(data[id].psu);
-        document.getElementById("price").textContent = data[id].pcPrice;
-        document.getElementById("popUpImg").src = data[id].pcImg;
-        document.getElementById("popUpDesc").textContent = data[id].pcDescription;
-        document.getElementById("popUpName").textContent = data[id].pcName;
-        document.getElementById("popUpBuyBtn").href = data[id].pcBuyLink;
-        document.getElementById("popUpBuyBtn").setAttribute('onclick', 'buyPC('+id+')');
-        }
+        $("#price").html(data[id].pcPrice);
+        $("#popUpName").html(data[id].pcName);
+        $("#popUpImg").attr("src",data[id].pcImg);
+        $("#popUpDesc").html(data[id].pcDescription);
+        $("#cpuBuy").attr("href", data[id].cpuBuyLink);
+        $("#coolerBuy").attr("href", data[id].coolerBuyLink);
+        $("#moboBuy").attr("href", data[id].moboBuyLink);
+        $("#ramBuy").attr("href", data[id].ramBuyLink);
+        $("#storageBuy").attr("href", data[id].storageBuyLink);
+        $("#gpuBuy").attr("href", data[id].gpuBuyLink);
+        $("#caseBuy").attr("href", data[id].caseBuyLink);
+        $("#psuBuy").attr("href", data[id].psuBuyLink);
+      }
     )
   }
 function buyPC() {
-  
+  $("#buyLinks").css("display", "grid");
 }

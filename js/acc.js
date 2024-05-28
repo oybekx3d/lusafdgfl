@@ -19,7 +19,7 @@ function loadAccs() {
               let button = document.createElement('button');
               button.setAttribute('onclick', 'window.open("'+datum.accBuyLink+'")');
               i = i+1;
-              button.textContent = "More Information";
+              button.textContent = "Buy";
               contDiv.appendChild(img);
               contDiv.appendChild(header);
               contDiv.appendChild(description);
