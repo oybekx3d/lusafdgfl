@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/pc.css">
+    <script src="js/pcrelated.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script type="module" src="https://pyscript.net/releases/2024.5.2/core.js"></script>
     <script src="js/global.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
 </head>
-<body onload="loadComputers('./data/gaming.json')">
+<body onload="loadComputers('gaming')">
   <div class="fixedView">
       <div id="announcementBanner">
         <a id="announcement" href="">Announcement!</a>
@@ -18,21 +20,34 @@
         <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
         <ul>
           <li><a href='index.html'>Home</a></li>
-          <li><a href='gaming.html'>Gaming</a></li>
-          <li><a href='productivity.html'>Productivity</a></li>
+          <li><a class='dropdown-arrow'>PCs</a>
+            <ul class='sub-menus'>
+              <li><a href='gaming.html'>Gaming PCs</a></li>
+              <li><a href='productivity.html'>Productivity PCs</a></li>
+              <li><a href='homepc.html'>Home/Office PCs</a></li>
+            </ul>
+          </li>
           <li><a href='accs.html'>Accessories & peripherals</a></li>
-          <li><a href="deals.html">Current Deals</a></li>
+          <li><a href='deals.html'>Deals</a></li>
           <li><a href='benchmarks.html'>Benchmarks</a></li>
           <li><a href='blog.html'>Blog</a></li>
-          <li><a href="news.html">News</a></li>
-          <li><a href="socials.html">Socials</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-          <li><a href='about.html'>About</a></li>
+          <li><a class='dropdown-arrow'>Info</a>
+            <ul class='sub-menus'>
+              <li><a href='news.html'>News</a></li>
+              <li><a href='faq.html'>FAQ</a></li>
+              <li><a href='about.html'>About</a></li>
+            </ul>
+          </li>
+          <li><a class='dropdown-arrow'>Contact</a>
+            <ul class='sub-menus'>
+              <li><a href='socials.html'>Social Media</a></li>
+              <li><a href='contact.html'>Business contact</a></li>
+            </ul>
+          </li>
           <li><a class='dropdown-arrow'>Country</a>
             <ul class='sub-menus'>
-            <li><a href='http://'>1</a></li>
-            <li><a href='http://'>2</a></li>
+              <li><a>United States</a></li>
+              <li><a>Canada</a></li>
             </ul>
           </li>
         </ul>
@@ -47,37 +62,6 @@
         <h1>Gaming</h1>
         <p>Something should be written here but im not generating some text for it so nah just fuck it</p>
         <a href="#PCList"><button>Check out!</button></a>
-      </div>
-    </div>
-
-    
-    <div id="PCPopUp">
-      <button onclick="closePopUp('PCPopUp')">Close</button>
-      <div>
-        <div>
-          <img src="" alt="" id="popUpImg">
-        </div>
-        <div>
-          <h2 id="popUpName"></h2>
-          <p id="popUpDesc"></p>
-          <div class="spacer"></div>
-          <h3>Specifications</h3>
-          <ol id="pcSpecCont">
-            <li id="cpu"></li>
-            <li id="cooler"></li>
-            <li id="mobo"></li>
-            <li id="ram"></li>
-            <li id="storage"></li>
-            <li id="gpu"></li>
-            <li id="case"></li>
-            <li id="psu"></li>
-          </ol>
-          <div class="spacer"></div>
-          <div>
-            <h3 id="price"></h3>
-            <button id="popUpBuyBtn">Buy Now</button>
-          </div>
-        </div>
       </div>
     </div>
 

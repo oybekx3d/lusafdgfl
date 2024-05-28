@@ -5,6 +5,8 @@
     <script type="module" src="https://pyscript.net/releases/2024.5.2/core.js"></script>
     <script src="js/global.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/pcrelated.js"></script>
+    <link rel="stylesheet" href="css/pc.css">
     <link rel="stylesheet" href="css/global.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -53,19 +55,42 @@
   </div>
 
 
+      <main>
+
+        
+        <div id="PCPopUp" onload="loadPCInfo()">
+            <div>
+              <div>
+                <img src="" alt="" id="popUpImg">
+              </div>
+              <div>
+                <h2 id="popUpName"></h2>
+                <p id="popUpDesc"></p>
+                <div class="spacer"></div>
+                <h3>Specifications</h3>
+                <ol id="pcSpecCont">
+                  <li id="cpu"></li>
+                  <li id="cooler"></li>
+                  <li id="mobo"></li>
+                  <li id="ram"></li>
+                  <li id="storage"></li>
+                  <li id="gpu"></li>
+                  <li id="case"></li>
+                  <li id="psu"></li>
+                </ol>
+                <div class="spacer"></div>
+                <div>
+                  <h3 id="price"></h3>
+                  <button id="popUpBuyBtn">Buy Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
 
 
+      </main>
 
 
-
-
-
-
-
-      <main></main>
-
-
-      
     <footer>
         <div>
           <div>
@@ -98,4 +123,14 @@
         <h4>Website Made by Oybek Qodirberdiyev</h4>
       </footer>
 </body>
+<script>
+  var url = window.location.search;
+  console.log(url);
+  var urlParams = new URLSearchParams(url);
+  var category = urlParams.get('category');
+  var id = urlParams.get('id');
+  console.log(category, id);
+
+  loadPCInfo();
+</script>
 </html>
