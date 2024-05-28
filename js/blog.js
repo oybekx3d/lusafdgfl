@@ -5,10 +5,9 @@ function loadCheatsheet(){
             .then(data =>
                     Object.values(data).forEach(datum => {
                         let parent = document.getElementById('blog');
-                        let contDiv = document.createElement('div');
+                        let contDiv = document.createElement('a');
                         contDiv.className = "filter";
-                        contDiv.setAttribute('onclick', 'openBlogPost('+i+')');
-                        i=i+1;
+                        contDiv.setAttribute('href', ("blogpost.html?id="+datum.id));
                         let innerDiv = document.createElement('div');
                         let writtenDate = document.createElement('h4');
                         writtenDate.textContent = datum.dateWritten;
@@ -28,12 +27,12 @@ function loadCheatsheet(){
                         contDiv.appendChild(img);
                         parent.appendChild(contDiv);
 }))}
-function openBlogPost(id) {
+function loadBlogPost() {
     fetch("data/blog.json")
             .then(response => response.json())
             .then(data => {
+                let id = new URLSearchParams(window.location.search).get('id');
                 let pCont = document.getElementById("blogPostParagraphs");
-                pCont.innerHTML = "";
                 let pCount = data[id].paraCount;
                 for (let i = 0; i < pCount+1; i++) {
                     let p = document.createElement('p');
