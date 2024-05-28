@@ -27,7 +27,9 @@
     "caseBuyLink":"https://google.com/case",
 
     "psu":"850W 80+ Dick rating",
-    "psuBuyLink":"https://google.com/psu"
+    "psuBuyLink":"https://google.com/psu",
+
+    "id": "1"
 },
     "2" : {
     "pcName":"Gaming PC NickName",
@@ -57,7 +59,9 @@
     "caseBuyLink":"https://google.com/case",
 
     "psu":"850W 80+ Dick rating",
-    "psuBuyLink":"https://google.com/psu"
+    "psuBuyLink":"https://google.com/psu",
+
+    "id": "2"
     },
     "3" : {
         "pcName":"Gaming PC NickName",
@@ -87,7 +91,9 @@
         "caseBuyLink":"https://google.com/case",
     
         "psu":"850W 80+ Dick rating",
-        "psuBuyLink":"https://google.com/psu"
+        "psuBuyLink":"https://google.com/psu",
+
+        "id": "3"
     },
     "4" : {
         "pcName":"Gaming PC NickName",
@@ -117,7 +123,9 @@
         "caseBuyLink":"https://google.com/case",
     
         "psu":"850W 80+ Dick rating",
-        "psuBuyLink":"https://google.com/psu"
+        "psuBuyLink":"https://google.com/psu",
+
+        "id": "4"
     },
     "5" : {
         "pcName":"Gaming PC NickName",
@@ -147,7 +155,9 @@
         "caseBuyLink":"https://google.com/case",
     
         "psu":"850W 80+ Dick rating",
-        "psuBuyLink":"https://google.com/psu"
+        "psuBuyLink":"https://google.com/psu",
+
+        "id": "5"
     },
     "6" : {
         "pcName":"Gaming PC NickName",
@@ -177,7 +187,9 @@
         "caseBuyLink":"https://google.com/case",
     
         "psu":"850W 80+ Dick rating",
-        "psuBuyLink":"https://google.com/psu"
+        "psuBuyLink":"https://google.com/psu",
+
+        "id": "6"
     },
     "7" : {
         "pcName":"Gaming PC NickName",
@@ -207,7 +219,9 @@
         "caseBuyLink":"https://google.com/case",
     
         "psu":"850W 80+ Dick rating",
-        "psuBuyLink":"https://google.com/psu"
+        "psuBuyLink":"https://google.com/psu",
+
+        "id": "7"
     },
     "8" : {
         "pcName":"Gaming PC NickName",
@@ -237,7 +251,9 @@
         "caseBuyLink":"https://google.com/case",
     
         "psu":"850W 80+ Dick rating",
-        "psuBuyLink":"https://google.com/psu"
+        "psuBuyLink":"https://google.com/psu",
+
+        "id": "8"
     },
     "9" : {
         "pcName":"Gaming PC NickName",
@@ -267,7 +283,9 @@
         "caseBuyLink":"https://google.com/case",
     
         "psu":"850W 80+ Dick rating",
-        "psuBuyLink":"https://google.com/psu"
+        "psuBuyLink":"https://google.com/psu",
+
+        "id": "9"
     },
     "10" : {
         "pcName":"Gaming PC NickName",
@@ -297,6 +315,8 @@
         "caseBuyLink":"https://google.com/case",
     
         "psu":"850W 80+ Dick rating",
-        "psuBuyLink":"https://google.com/psu"
+        "psuBuyLink":"https://google.com/psu",
+
+        "id": "10"
     }
 }

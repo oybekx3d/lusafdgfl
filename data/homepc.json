@@ -1,0 +1,66 @@
+{
+    "1" : {
+    "pcName":"Home PC NickName",
+    "pcDescription":"Cheap yet powerful for daily tasks to use at home. Capable of 1080p gaming.",
+    "pcImg":"imgs/pc_empty.webp",
+    "pcPrice":"1$",
+
+    "cpu":"Ryzen 5 7600",
+    "cpuBuyLink":"https://google.com/cpu",
+
+    "cooler":"Stock cooler",
+    "coolerBuyLink":"https://google.com/cooler",
+
+    "mobo":"B650 Aorus Elite XXX",
+    "moboBuyLink":"https://google.com/mobo",
+
+    "ram":"2x8GB DDR5 5600MHz",
+    "ramBuyLink":"https://google.com/ram",
+
+    "storage":"1TB NVME SSD Gen 3.0",
+    "storageBuyLink":"https://google.com/storage",
+
+    "gpu":"rx7600",
+    "gpuBuyLink":"https://google.com/gpu",
+
+    "case":"Simple elegand case",
+    "caseBuyLink":"https://google.com/case",
+
+    "psu":"750W 80+ Gold, Tier B",
+    "psuBuyLink":"https://google.com/psu",
+    
+    "id":"1"
+},
+    "2" : {
+    "pcName":"Office PC NickName",
+    "pcDescription":"Cheap yet powerful for office work. Capable of 1080p gaming.",
+    "pcImg":"imgs/pc_empty.webp",
+    "pcPrice":"2$",
+    
+    "cpu":"Ryzen 5 7600",
+    "cpuBuyLink":"https://google.com/cpu",
+
+    "cooler":"Stock cooler",
+    "coolerBuyLink":"https://google.com/cooler",
+
+    "mobo":"B650m Aorus Elite XXXX",
+    "moboBuyLink":"https://google.com/mobo",
+
+    "ram":"2x8GB DDR5 5600MHz",
+    "ramBuyLink":"https://google.com/ram",
+
+    "storage":"2TB Sata SSD 6 GBPS",
+    "storageBuyLink":"https://google.com/storage",
+
+    "gpu":"rx7600",
+    "gpuBuyLink":"https://google.com/gpu",
+
+    "case":"ITX case",
+    "caseBuyLink":"https://google.com/case",
+
+    "psu":"750W 80+ Gold, Tier B",
+    "psuBuyLink":"https://google.com/psu",
+
+    "id":"2"
+    }
+}
