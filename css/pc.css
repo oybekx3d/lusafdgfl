@@ -3,6 +3,7 @@
 	grid-template-columns: auto auto auto;
 	margin: 5vh 10vw;
 	animation: openBuyLinks 0.3s;
+	overflow: hidden;
 }
 @keyframes openBuyLinks{
 	0%{

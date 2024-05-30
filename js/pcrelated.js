@@ -1,5 +1,12 @@
+
+function addAd() {  
+//*  $("#PCList").append("<script async src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9952238571227189' crossorigin='anonymous'></script><!-- test1 --><ins class='adsbygoogle'     style='display:block'     data-ad-client='ca-pub-9952238571227189'     data-ad-slot='4584540746'     data-ad-format='auto'     data-full-width-responsive='true'></ins><script>     (adsbygoogle = window.adsbygoogle || []).push({});</script>")
+      $("#PCList").append("<div><img src='imgs/cpu.png'></div>")
+}
 function loadComputers(path) {
-  fetch(("./data/"+path+".json")) 
+  let rndNum = Math.floor(Math.random() * 5) + 1;
+  let i = 0;
+  fetch(("data/"+path+".json")) 
       .then(response => response.json())
       .then(data =>
           Object.values(data).forEach(datum => {
@@ -39,10 +46,17 @@ function loadComputers(path) {
             contDiv.appendChild(price);
             contDiv.appendChild(a);
             parent.appendChild(contDiv);
+
+            if (i == rndNum) {
+              addAd();
+              i = 0;
+            } else {
+              i++;
+            }
+
         })
       );
   }
-
 function loadPCInfo() {
   fetch(("data/"+category+".json"))
       .then(response => response.json())
