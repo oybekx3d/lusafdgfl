@@ -1,67 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-J779LKM97G"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-J779LKM97G');
-</script>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/pc.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="js/global.js"></script>
     <script src="js/pcrelated.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
   </head>
-  <body onload="loadComputers('index')">
+  <body>
     <div class="fixedView">
       <div id="announcementBanner">
         <a id="announcement" href="">Announcement!</a>
       </div>
       <nav id='menu'>
-        <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
-        <ul>
-          <li><a href='index.html'>Home</a></li>
-          <li><a class='dropdown-arrow'>PCs</a>
-            <ul class='sub-menus'>
-              <li><a href='gaming.html'>Gaming PCs</a></li>
-              <li><a href='productivity.html'>Productivity PCs</a></li>
-              <li><a href='homepc.html'>Home/Office PCs</a></li>
-            </ul>
-          </li>
-          <li><a href='accs.html'>Accessories & peripherals</a></li>
-          <li><a href='deals.html'>Deals</a></li>
-          <li><a href='benchmarks.html'>Benchmarks</a></li>
-          <li><a href='blog.html'>Blog</a></li>
-          <li><a class='dropdown-arrow'>Info</a>
-            <ul class='sub-menus'>
-              <li><a href='news.html'>News</a></li>
-              <li><a href='faq.html'>FAQ</a></li>
-              <li><a href='about.html'>About</a></li>
-            </ul>
-          </li>
-          <li><a class='dropdown-arrow'>Contact</a>
-            <ul class='sub-menus'>
-              <li><a href='socials.html'>Social Media</a></li>
-              <li><a href='contact.html'>Business contact</a></li>
-            </ul>
-          </li>
-          <li><a class='dropdown-arrow'>Country</a>
-            <ul class='sub-menus'>
-              <li><a>United States</a></li>
-              <li><a>Canada</a></li>
-            </ul>
-          </li>
-        </ul>
       </nav>
     </div>
-
     <main>
       <div id="mainMenuBanner">
         <div>
@@ -70,7 +27,6 @@
           <a href="#PCList"><button>Popular PCs</button></a>
         </div>
       </div>
-
       <div class="recommendedPCsHeader">
         <h2>Recommended PCs</h2>
         <p>Check out personally recommended computers, these are mostly very good deals or very good combinations</p>
@@ -78,8 +34,6 @@
       <div id="PCList">
       </div>
       <div id="banners">
-
-
         <div class="mobileHide">
           <div>
             <p>Get the Highest Possible performanec out of your Money with our Gaming PCs</p>
@@ -87,8 +41,6 @@
           </div>
             <img src="imgs/gaming.svg" alt="">
         </div>
-
-        
         <div class="desktopHide">
           <img src="imgs/gaming.svg" alt="">
           <div>
@@ -96,9 +48,6 @@
             <a href="gaming.html"><button>Let's Game</button></a>
           </div>
         </div>
-
-
-
         <div>
           <img src="imgs/prod.svg" alt="">
           <div>
@@ -106,9 +55,6 @@
             <a href="productivity.html"><button>Let's Create</button></a>
           </div>
         </div>
-
-
-
         <div class="mobileHide">
           <div>
             <p>Upgrade your Setup with good looking yet useful accessories and peripherals</p>
@@ -116,8 +62,6 @@
           </div>
           <img src="imgs/peripherals.svg" alt="">
         </div>
-
-        
         <div class="desktopHide">
           <img src="imgs/peripherals.svg" alt="">
           <div>
@@ -125,9 +69,6 @@
             <a href="accs.html"><button>Let's See</button></a>
           </div>
         </div>
-
-
-
         <div>
           <img src="imgs/deals.svg" alt="">
           <div>
@@ -135,9 +76,6 @@
             <a href="deals.html"><button>Check Deals</button></a>
           </div>
         </div>
-
-
-
         <div class="mobileHide">
           <div>
             <p>Check Any Computers Benchmarks without even ordering it with our Benchmarks!</p>
@@ -145,9 +83,6 @@
           </div>
           <img src="imgs/benchmark.svg" alt="">
         </div>
-
-
-        
         <div class="desktopHide">
           <img src="imgs/benchmark.svg" alt="">
           <div>
@@ -155,9 +90,6 @@
             <a href="benchmarks.html"><button>Let's Check</button></a>
           </div>
         </div>
-
-
-
         <div>
           <img src="imgs/learn.svg" alt="">
           <div>
@@ -165,9 +97,6 @@
             <a href="blog.html"><button>Read Now!</button></a>
           </div>
         </div>
-
-
-
         <div class="mobileHide">
           <div>
             <p>Read about Updates on our Website & Social Media</p>
@@ -175,8 +104,6 @@
           </div>
           <img src="imgs/news.svg" alt="">
         </div>
-
-        
         <div class="desktopHide">
           <img src="imgs/news.svg" alt="">
           <div>
@@ -184,9 +111,27 @@
             <a href="news.html"><button>Read!</button></a>
           </div>
         </div>
-
-
-
+        <div>
+          <img src="imgs/faq.svg" alt="">
+          <div>
+            <p>Any questions about us? Find out in F.A.Q. section.</p>
+            <a href="faq.html"><button>Find Answers!</button></a>
+          </div>
+        </div>
+        <div class="desktopHide">
+          <img src="imgs/about.svg" alt="">
+          <div>
+            <p>Find out more Information about our Company and our goal</p>
+            <a href="about.html"><button>Read!</button></a>
+          </div>
+        </div>
+        <div class="mobileHide">
+          <div>
+            <p>Find out more Information about our Company and our goal</p>
+            <a href="about.html"><button>Read!</button></a>
+          </div>
+          <img src="imgs/about.svg" alt="">
+        </div>
         <div>
           <img src="imgs/social-media.svg" alt="">
           <div>
@@ -194,68 +139,20 @@
             <a href="socials.html"><Button>Follow!</Button></a>
           </div>
         </div>
-
-
-
-        <div class="mobileHide">
-          <div>
-            <p>Check out out affordable services with high quality Support</p>
-            <a href="services.html"><button>Check Services!</button></a>
-          </div>
-          <img src="imgs/services.svg" alt="">
-        </div>
-
-
-        
-        <div class="desktopHide">
-          <img src="imgs/services.svg" alt="">
-          <div>
-            <p>Check out out affordable services with high quality Support</p>
-            <a href="services.html"><button>Check Services!</button></a>
-          </div>
-        </div>
-
-
-
         <div>
+          <div class="mobileHide">
+            <p>Get in touch with us if you have any questions or offers!</p>
+            <a href="contact.html"><button>Contact!</button></a>
+          </div>
+          <img src="imgs/contact.svg" alt="">
+        </div>
+        <div class="desktopHide">
           <img src="imgs/contact.svg" alt="">
           <div>
             <p>Get in touch with us if you have any questions or offers!</p>
             <a href="contact.html"><button>Contact!</button></a>
           </div>
         </div>
-
-
-
-        <div class="mobileHide">
-          <div>
-            <p>Any questions about us? Find out in F.A.Q. section.</p>
-            <a href="faq.html"><button>Find Answers!</button></a>
-          </div>
-          <img src="imgs/faq.svg" alt="">
-        </div>
-
-        
-        <div class="desktopHide">
-          <img src="imgs/faq.svg" alt="">
-          <div>
-            <p>Any questions about us? Find out in F.A.Q. section.</p>
-            <a href="faq.html"><button>Find Answers!</button></a>
-          </div>
-        </div>
-
-
-
-        <div>
-          <img src="imgs/about.svg" alt="">
-          <div>
-            <p>Find out more Information about our Company and our goal</p>
-            <a href="about.html"><button>Read!</button></a>
-          </div>
-        </div>
-
-
-
       </div>
 
       <div id="reviewCont">
@@ -327,4 +224,7 @@
         <h4>Website Made by Oybek Qodirberdiyev</h4>
       </footer>
     </body>
+    <script>
+      $(loadComputers("index"));
+    </script>
 </html>
