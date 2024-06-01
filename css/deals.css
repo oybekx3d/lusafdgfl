@@ -1,3 +1,6 @@
+#mainMenuBanner{
+    background-image: url("../imgs/deals_banner.svg");
+}
 #dealList{
     display: grid;
     grid-template-columns: auto auto auto auto;
