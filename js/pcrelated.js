@@ -6,6 +6,9 @@ function addAd() {
 function loadComputers(path) {
   let rndNum = Math.floor(Math.random() * 5) + 1;
   let i = 0;
+  if (path == "index") {
+    i = 69;
+  }
   fetch(("data/"+path+".json")) 
       .then(response => response.json())
       .then(data =>

@@ -6,16 +6,17 @@ function updatemenu() {
       document.getElementById('menu').style.borderRadius = '0';
     }
   }
-
-
-
-
 function updateGlobal() {
   fetch('data/global.json')
       .then(response => response.json())
       .then(data => {
-          document.getElementById("announcement").textContent = data.announcement;
-          document.getElementById("announcement").href = data.announcementLink;
-        })
+        $("#announcement").html(data.announcement);
+        $("#announcement").attr("href", data.announcementLink);
+        });
+  fetch('menu.txt')
+      .then(response => response.text())
+      .then(data => {
+        $('#menu').html(data)
+        });
 }
 updateGlobal()
