@@ -18,5 +18,10 @@ function updateGlobal() {
       .then(data => {
         $('#menu').html(data)
         });
+  fetch('footer.txt')
+      .then(response => response.text())
+      .then(data => {
+        $('footer').html(data)
+        });
 }
 updateGlobal()
