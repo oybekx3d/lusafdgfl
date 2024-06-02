@@ -83,6 +83,17 @@ body{
 	padding: 20vh 0;
     text-align: center;
     animation: mainMenuBannerAnimation 2s;
+	margin-bottom: 10vh;
+}
+#mainMenuBanner div div{
+	display: flex;
+	padding: 0;
+	width: 50vw;
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(7.1px);
+	-webkit-backdrop-filter: blur(7.1px);
 }
 #mainMenuBanner h1{
 	width: 50vw;
@@ -93,8 +104,8 @@ body{
 }
 #mainMenuBanner p{
     color: white;
+	width: 50vw;
     font-size: 1.5vw;
-    padding: 0 25vw;
 }
 #mainMenuBanner button{
     background-color: transparent;
@@ -103,7 +114,7 @@ body{
     font-family: monospace;
     color: #fff;
     padding: 0.2vh 2vw;
-    margin-bottom: 10vh;
+    margin-bottom: 5vh;
 	scroll-behavior: smooth;
 }
 #mainMenuBanner button:hover{
