@@ -1,0 +1,146 @@
+.recommendedPCsHeader{
+    display: flex;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+}
+.recommendedPCsHeader h2{
+    font-size: 4vw;
+    margin-top: 1vh;
+    margin-bottom: 0;
+}
+.recommendedPCsHeader p{
+    font-size: 1.5vw;
+    text-align: center;
+}
+#banners{
+    display: flex;
+    flex-direction: column;
+    border: #dc0000 0.2vw solid;
+    margin: 3vh 5vw;
+    color: white;
+    padding: 1.5vw;
+}
+#banners div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+#banners div div{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+#banners img{
+    width: 35vw;
+}
+#banners div p{
+    font-size: 2vw;
+    width: 35vw;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+#banners div button{
+    background-color: transparent;
+    border: #dc0000 0.2vw solid;
+    color: white;
+    font-size: 2vw;
+    padding: 0.6vw 2vw;
+}
+#banners div button:hover{
+    scale: 1.1;
+    background-color: #dc0000;
+}
+#reviewsHeader{
+    font-size: 5vw;
+    color: white;
+    text-align: center;
+}
+#reviews{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 2vw;
+}
+#reviews div{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: #dc0000 0.2vw solid;
+    color: white;
+    padding: 1.5vw;
+}
+#reviews div:hover{
+    cursor: pointer;
+    scale: 1.1;
+}
+#reviews div img{
+    width: 15vw;
+}
+#reviewCont{
+    width: 89vw;
+    margin: 0 auto;
+    border: #dc0000 0.2vw solid;
+    padding: 2vw;
+}
+#reviews div h2{
+    text-align: center;
+    font-size: 2vw;
+}
+#reviews div p{
+    font-size: 1vw;
+    text-align: center;
+}
+@media screen and (max-width: 800px){
+	#banners div{
+		flex-direction: column ;
+        padding-bottom: 2vh;
+        border-bottom: #dc0000 0.2vw solid;
+	}
+    .recommendedPCsHeader h2{
+        font-size: 3.5vh;
+    }
+    .recommendedPCsHeader p{
+        font-size: 2vh;
+    }
+    #banners div:last-of-type{
+        border: none;
+    }
+    #banners div div{
+        border: none;
+    }
+	#banners img{
+		width: 70vw;
+	}
+    #banners div p{
+        font-size: 2vh;
+        width: 70vw;
+    }
+    #banners div button{
+        font-size: 2.5vh;
+    }
+    #banners div a{
+        margin: 0 auto;
+    }
+    #reviewsHeader{
+        font-size: 3.5vh;
+    }
+    #reviews{
+        grid-template-columns: auto;
+    }
+    #reviews div img{
+        width: 40vw;
+    }
+    #reviews div h2{
+        font-size: 3vh;
+    }
+    #reviews div p{
+        font-size: 2vh;
+    }
+    #reviews div:hover{
+        scale: 1;
+    }
+}
